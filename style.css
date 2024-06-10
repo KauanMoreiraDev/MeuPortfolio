@@ -1,35 +1,52 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-:root{
+:root {
     --color-principal: #5400A3;
     --color-fundo: #872080;
     --color-black: black;
     --color-white: white;
-    --color-text:#B2D3F7;
+    --color-text: #B2D3F7;
     --color-teste: #a800a8;
+
+    --font-destaque: 'Monoton';
+    --font-destaque2: 'Staatliches';
+    --font-principal-text: 'Victor Mono';
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-header{
+header {
+    font-family: var(--font-destaque2);
+    font-weight: 300;
     text-align: center;
+    color: rgba(255, 255, 255, 0.733);
     background-image: linear-gradient(to bottom, var(--color-black), var(--color-principal));
-    color: var(--color-white);
 }
 
-nav{
+header h1 {
+    font-size: 4em;
+}
+
+nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     width: 98%;
 }
 
-p{color: var(--color-black);}
+p {
+    color: var(--color-black);
+}
 
-main a{
+main p {font: Normal 400 1em var(--font-principal-text), 'monospace';}
+
+main a {
     text-decoration: none;
     color: var(--color-white);
     width: 130px;
@@ -37,12 +54,12 @@ main a{
     text-align: center;
 }
 
-main a:visited{
+main a:visited {
     text-decoration: none;
     color: var(--color-white);
 }
 
-main a:hover{
+main a:hover {
     text-decoration: underline;
     color: var(--color-fundo);
     background-color: var(--color-white);
@@ -55,13 +72,14 @@ main a:hover{
 
 h2 {
     color: var(--color-white);
+    font-family: var(--font-destaque2);
 }
 
-body{
+body {
     background-image: linear-gradient(to bottom, var(--color-principal), var(--color-fundo));
 }
 
-#home{
+#home {
     display: flex;
     width: 80%;
     flex-direction: row;
@@ -72,24 +90,24 @@ body{
     margin: auto;
 }
 
-#propaganda{
+#propaganda {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-end;
     justify-content: space-around;
 }
 
-#propaganda a{
+#propaganda a {
     margin: 10px 50px 150px;
 }
 
-#botão{
+#botão {
     text-decoration: none;
     background-color: rgb(132, 0, 255);
     color: black;
 }
 
-#minhafoto{
+#minhafoto {
     border-radius: 203px 128px 70%;
     margin-left: 40px;
     border: 8px solid blue;
@@ -98,26 +116,26 @@ body{
     border-left-color: red;
 }
 
-.sessões{
+.sessões {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
 }
 
-.quadrado{
+.quadrado {
     height: 250px;
     width: 500px;
     margin: 10px 20px;
     background-color: aqua;
 }
 
-.textproject{
+.textproject {
     display: flex;
 
     width: 650px;
 }
 
-.hab{
+.hab {
     display: inline-block;
     height: 50px;
     width: 50px;
@@ -125,7 +143,7 @@ body{
     background-color: aqua;
 }
 
-footer{
+footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -135,13 +153,13 @@ footer{
     height: 70px;
 }
 
-.centralizar{
+.centralizar {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: black;
 }
