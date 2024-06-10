@@ -4,6 +4,9 @@
     --color-principal: #5400A3;
     --color-fundo: #872080;
     --color-black: black;
+    --color-white: white;
+    --color-text:#B2D3F7;
+    --color-teste: #a800a8;
 }
 
 *{
@@ -11,29 +14,47 @@
     padding: 0px;
 }
 
-p{color: var(--color-teste);}
+header{
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--color-black), var(--color-principal));
+    color: var(--color-white);
+}
+
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 98%;
+}
+
+p{color: var(--color-black);}
 
 main a{
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
+    width: 130px;
+    height: 45px;
+    text-align: center;
 }
 
 main a:visited{
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
 }
 
 main a:hover{
     text-decoration: underline;
-    color: var(--color-black);
-    background-color: var(--color-fundo);
-    border-radius: 10px;
-    width: 10px;
-    height: 50px;
+    color: var(--color-fundo);
+    background-color: var(--color-white);
+    border-radius: 30px;
+    width: 130px;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 h2 {
-    color: white;
+    color: var(--color-white);
 }
 
 body{
@@ -52,8 +73,14 @@ body{
 }
 
 #propaganda{
- margin-top: 20px;
- padding-top: 100px;   
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#propaganda a{
+    margin: 10px 50px 150px;
 }
 
 #botão{
@@ -73,20 +100,48 @@ body{
 
 .sessões{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
 .quadrado{
-    display: inline;
+    height: 250px;
+    width: 500px;
+    margin: 10px 20px;
+    background-color: aqua;
+}
 
-    height: 200px;
-    width: 400px;
+.textproject{
+    display: flex;
+
+    width: 650px;
+}
+
+.hab{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
     margin: 10px 20px;
     background-color: aqua;
 }
 
 footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3px auto;
     background-color: white;
+    height: 70px;
+}
+
+.centralizar{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
 }
