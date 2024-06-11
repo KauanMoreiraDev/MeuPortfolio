@@ -81,12 +81,11 @@ body {
 
 #home {
     display: flex;
-    width: 80%;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: stretch;
-
+    width: 80%;
     margin: auto;
 }
 
@@ -110,6 +109,9 @@ body {
 #minhafoto {
     border-radius: 203px 128px 70%;
     margin-left: 40px;
+    max-width: 500px;
+    min-height: 500px;
+
     border: 8px solid blue;
     border-top-color: chartreuse;
     border-bottom-color: yellow;
