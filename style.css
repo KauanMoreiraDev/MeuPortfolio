@@ -79,6 +79,40 @@ body {
     background-image: linear-gradient(to bottom, var(--color-principal), var(--color-fundo));
 }
 
+#tema{
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    appearance: none;
+    background-color: var(--color-fundo);
+    box-shadow: inset 0px 0px 8px 1px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+}
+
+#tema:checked{
+    background-color: var(--color-text);
+}
+
+#tema::before{
+    content: '';
+    background-color: var(--color-white);
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    box-shadow: 2px 4px 12px 1px black;
+    position: absolute;
+    transform: scale(1.1);
+    transition: 0.4s;
+    top: 0px;
+    left: 0px;
+}
+
+#tema:checked::before{
+    left: 25px;
+}
+
 #home {
     display: flex;
     flex-direction: row;
